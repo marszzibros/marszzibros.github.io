@@ -1,8 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -14,44 +14,49 @@ body {
 header {
     background-color: #3498db;
     color: #fff;
-    padding: 20px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 header p {
-    margin: 5px 0;
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 section {
     background-color: #fff;
     margin: 20px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.job,
-.degree {
-    margin-bottom: 20px;
+.job h3,
+.degree h3 {
+    color: #333;
 }
 
 .date {
     color: #777;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #3498db;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
