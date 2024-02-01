@@ -15,14 +15,36 @@ header {
     background-color: #3498db;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
 }
 
-.bio {
-    margin-top: 20px;
+header p {
+    margin: 5px 0;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3498db;
+}
+
+.job,
+.degree {
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #777;
 }
 
 footer {
