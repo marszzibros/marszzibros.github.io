@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index of HTML Files</title>
+    <title>Index with Embedded HTML Files</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
         }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin: 10px 0 5px;
+        }
         iframe {
-            margin: 10px;
+            width: 640px;
+            height: 480px;
             border: 1px solid #ccc;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>My HTML Files</h1>
-    <h2>1.html</h2>
-    <iframe src="https://drive.google.com/file/d/1yq7I-EdQJblOe9A7mmmGpzQawkfsmraP/preview" width="640" height="480" allow="autoplay"></iframe>
+    <h1>All My HTML Files</h1>
     
-    <h2>2.html</h2>
-    <iframe src="2.html" width="640" height="480" allow="autoplay"></iframe>
+    <h2>Species 2D</h2>
+    <iframe src="umap_interactive_plot_species_2D.html" title="Species 2D"></iframe>
     
-    <h2>3.html</h2>
-    <iframe src="3.html" width="640" height="480" allow="autoplay"></iframe>
+    <h2>Species 3D</h2>
+    <iframe src="umap_interactive_plot_species_3D.html" title="Species 3D"></iframe>
     
-    <h2>4.html</h2>
-    <iframe src="4.html" width="640" height="480" allow="autoplay"></iframe>
+    <h2>Ecoli by Models 2D</h2>
+    <iframe src="umap_interactive_plot_species_2D_Ecoli.html" title="Ecoli by Models 2D"></iframe>
+    
+    <h2>Ecoli by Models 3D</h2>
+    <iframe src="umap_interactive_plot_species_3D_Ecoli.html" title="Ecoli by Models 3D"></iframe>
 </body>
 </html>
