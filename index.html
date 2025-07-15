@@ -3,32 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index with Embedded HTML Files</title>
+    <title>Your Name - Publications & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Darker text */
         }
-        h1 {
-            margin-bottom: 20px;
+        .container {
+            max-width: 800px;
         }
-        h2 {
-            margin: 10px 0 5px;
+        .section-title {
+            border-bottom: 2px solid #cbd5e1; /* Light gray border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b; /* Even darker text for titles */
         }
-        iframe {
-            width: 1500px;
-            height: 800px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
+        .publication-item {
+            background-color: #ffffff; /* White background for publication cards */
+            border-left: 4px solid #3b82f6; /* Blue accent border */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.2s ease-in-out;
+        }
+        .publication-item:hover {
+            transform: translateY(-3px); /* Slight lift on hover */
+        }
+        a {
+            color: #3b82f6; /* Blue links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body>
-    <h1>All My HTML Files</h1>
-    
-    <h2>Species 2D</h2>
-    <iframe src="umap_interactive_plot_species_2D.html" title="Species 2D"></iframe>
-    
+<body class="antialiased">
+    <div class="container mx-auto p-6 lg:p-10">
+
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl font-extrabold text-gray-900 mb-2">Your Name</h1>
+            <p class="text-xl text-gray-600">Researcher | Author | [Your Field]</p>
+            <nav class="mt-6">
+                <ul class="flex justify-center space-x-6">
+                    <li><a href="#about" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">About</a></li>
+                    <li><a href="#publications" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">Publications</a></li>
+                    <li><a href="#contact" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="mb-12 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold section-title mb-6">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Welcome to my personal academic website! I am a [Your Profession/Role, e.g., PhD Candidate, Postdoctoral Researcher] in the field of [Your Field of Study]. My research interests lie primarily in [Specific Area 1], [Specific Area 2], and [Specific Area 3]. I am passionate about [something you are passionate about related to your work].
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700 mt-4">
+                This site serves as a comprehensive overview of my academic work, including my publications, research projects, and other contributions to the [Your Field] community. Feel free to explore my work and get in touch!
+            </p>
+            <!-- Optional: Add a link to your full CV if it's hosted elsewhere -->
+            <div class="mt-6 text-center">
+                <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">Download Full CV (PDF)</a>
+                <!-- Replace '#' with the actual link to your CV PDF -->
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mb-12 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold section-title mb-6">Publications</h2>
+
+            <!-- Example Publication 1 -->
+            <div class="publication-item p-5 mb-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Title of Publication One</h3>
+                <p class="text-gray-600 mb-1">
+                    <span class="font-medium">Authors:</span> Your Name, Co-Author A, Co-Author B
+                </p>
+                <p class="text-gray-600 mb-3">
+                    <span class="font-medium">Journal/Conference:</span> Journal of Important Research, Vol. X, No. Y, pp. Z-Z, Year.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
+                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
+                        </svg>
+                        [PDF]
+                    </a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                        </svg>
+                        [Abstract/Page]
+                    </a>
+                    <!-- Add more links as needed (e.g., GitHub repo, data, etc.) -->
+                </div>
+            </div>
+
+            <!-- Example Publication 2 -->
+            <div class="publication-item p-5 mb-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Another Important Paper Title</h3>
+                <p class="text-gray-600 mb-1">
+                    <span class="font-medium">Authors:</span> Co-Author C, Your Name, Co-Author D
+                </p>
+                <p class="text-gray-600 mb-3">
+                    <span class="font-medium">Journal/Conference:</span> Proceedings of the International Conference on Advanced Topics, Year.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
+                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
+                        </svg>
+                        [PDF]
+                    </a>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                        </svg>
+                        [Abstract/Page]
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more publication-item divs for each publication -->
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-12 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold section-title mb-6">Contact</h2>
+            <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                I'm always open to discussing research collaborations, academic opportunities, or any questions you might have about my work.
+            </p>
+            <ul class="text-lg text-gray-700 space-y-3">
+                <li>
+                    <strong class="font-semibold">Email:</strong> <a href="mailto:your.email@example.com" class="hover:text-blue-600">your.email@example.com</a>
+                </li>
+                <li>
+                    <strong class="font-semibold">LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">linkedin.com/in/yourprofile</a>
+                </li>
+                <li>
+                    <strong class="font-semibold">GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">github.com/yourusername</a>
+                </li>
+                <!-- Add other relevant links like Google Scholar, ResearchGate, ORCID, personal website, etc. -->
+                <li>
+                    <strong class="font-semibold">Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Google Scholar Profile</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm mt-10 p-4 border-t border-gray-200">
+            &copy; 2025 Your Name. All rights reserved.
+        </footer>
+
+    </div>
 </body>
 </html>
