@@ -1,248 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Publications & CV</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Jay Hwasung Jung - PhD Candidate</title>
+    <meta name="description" content="Academic website of Jay Hwasung Jung, Computer Science PhD Candidate.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        academic: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                            blue: '#2563eb', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Darker text */
+        /* Custom scrollbar for a tech feel */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        .container {
-            max-width: 800px;
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; 
         }
-        .section-title {
-            border-bottom: 2px solid #cbd5e1; /* Light gray border */
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            color: #1e293b; /* Even darker text for titles */
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
         }
-        .publication-item {
-            background-color: #ffffff; /* White background for publication cards */
-            border-left: 4px solid #3b82f6; /* Blue accent border */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            transition: transform 0.2s ease-in-out;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
         }
-        .publication-item:hover {
-            transform: translateY(-3px); /* Slight lift on hover */
-        }
-        a {
-            color: #3b82f6; /* Blue links */
-            text-decoration: none;
-        }
-        a:hover {
+        .highlight-author {
+            font-weight: 700;
+            color: #0f172a;
             text-decoration: underline;
+            text-decoration-color: #cbd5e1;
+            text-underline-offset: 4px;
         }
     </style>
 </head>
-<body class="antialiased">
-    <div class="container mx-auto p-6 lg:p-10">
+<body class="bg-academic-50 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
-        <!-- Header Section -->
-        <header class="text-center mb-10">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-2">Your Name</h1>
-            <p class="text-xl text-gray-600">Researcher | Author | [Your Field]</p>
-            <nav class="mt-6">
-                <ul class="flex justify-center space-x-6">
-                    <li><a href="#about" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">About</a></li>
-                    <li><a href="#publications" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">Publications</a></li>
-                    <li><a href="#contact" class="text-lg font-medium hover:text-blue-600 rounded-md px-3 py-2 transition duration-300 ease-in-out">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-12">
 
-        <!-- About Section -->
-        <section id="about" class="mb-12 p-6 bg-white rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold section-title mb-6">About Me</h2>
-            <p class="text-lg leading-relaxed text-gray-700">
-                Welcome to my personal academic website! I am a [Your Profession/Role, e.g., PhD Candidate, Postdoctoral Researcher] in the field of [Your Field of Study]. My research interests lie primarily in [Specific Area 1], [Specific Area 2], and [Specific Area 3]. I am passionate about [something you are passionate about related to your work].
-            </p>
-            <p class="text-lg leading-relaxed text-gray-700 mt-4">
-                This site serves as a comprehensive overview of my academic work, including my publications, research projects, and other contributions to the [Your Field] community. Feel free to explore my work and get in touch!
-            </p>
-            <!-- Optional: Add a link to your full CV if it's hosted elsewhere -->
-            <div class="mt-6 text-center">
-                <a href="#" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out shadow-md">Download Full CV (PDF)</a>
-                <!-- Replace '#' with the actual link to your CV PDF -->
-            </div>
-        </section>
+            <aside class="lg:col-span-4 xl:col-span-3 mb-12 lg:mb-0">
+                <div class="lg:sticky lg:top-10">
+                    <div class="mb-6 relative">
+                        <div class="w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-white shadow-lg mx-auto lg:mx-0 bg-slate-200 flex items-center justify-center">
+                            <i class="fa-solid fa-user text-6xl text-slate-400"></i>
+                            </div>
+                    </div>
 
-        <!-- Publications Section -->
-        <section id="publications" class="mb-12 p-6 bg-white rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold section-title mb-6">Publications</h2>
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 mb-2">Jay Hwasung Jung</h1>
+                        <p class="text-lg text-slate-600 mb-4 font-medium">PhD Candidate in Computer Science</p>
+                        
+                        <div class="flex items-center justify-center lg:justify-start gap-2 text-slate-500 mb-6">
+                            <i class="fa-solid fa-location-dot text-slate-400"></i>
+                            <span>University of Vermont</span>
+                        </div>
 
-            <!-- New Publication 1 -->
-            <div class="publication-item p-5 mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">C-ARM Guidance: A Self-Supervised Approach to Automated Positioning During Stroke Thrombectomy</h3>
-                <p class="text-gray-600 mb-1">
-                    <span class="font-medium">Authors:</span> A. Arrabi et al.
-                </p>
-                <p class="text-gray-600 mb-3">
-                    <span class="font-medium">Journal/Conference:</span> 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI), Houston, TX, USA, 2025, pp. 1-4.
-                </p>
-                <p class="text-gray-600 mb-3 text-sm italic">
-                    DOI: 10.1109/ISBI60581.2025.10980945
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10980945" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
-                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
-                        </svg>
-                        [PDF]
-                    </a>
-                    <a href="https://ieeexplore.ieee.org/document/10980945" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                        </svg>
-                        [Abstract/Page]
-                    </a>
+                        <p class="text-slate-600 leading-relaxed mb-6 text-sm lg:text-base">
+                            I am a PhD student interested in <strong>Medical Computer Vision</strong>, <strong>Deep Learning</strong>, and <strong>Robotics</strong>. 
+                            <br><br>
+                            My current research focuses on automated guidance for stroke thrombectomy and self-supervised learning for C-Arm positioning.
+                        </p>
+
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
+                            <a href="mailto:your.email@uvm.edu" class="bg-white p-2 rounded-lg shadow-sm border border-slate-200 text-slate-600 hover:text-blue-600 hover:border-blue-300 transition-all" title="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=yUQojDwAAAAJ&hl=en" target="_blank" class="bg-white p-2 rounded-lg shadow-sm border border-slate-200 text-slate-600 hover:text-blue-600 hover:border-blue-300 transition-all" title="Google Scholar">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="bg-white p-2 rounded-lg shadow-sm border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-slate-400 transition-all" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="bg-white p-2 rounded-lg shadow-sm border border-slate-200 text-slate-600 hover:text-blue-700 hover:border-blue-400 transition-all" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="bg-white p-2 rounded-lg shadow-sm border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-slate-400 transition-all" title="CV">
+                                <span class="font-mono text-xs font-bold">CV</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </aside>
 
-            <!-- New Publication 2 -->
-            <div class="publication-item p-5 mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Deep learning model predicts biplane trajectory from pelvis to head</h3>
-                <p class="text-gray-600 mb-1">
-                    <span class="font-medium">Authors:</span> Kashkoush A, Arrabi A, Jung J, Franssen N, Wshah S, Raymond S.
-                </p>
-                <p class="text-gray-600 mb-3">
-                    <span class="font-medium">Journal/Conference:</span> Society for NeuroInterventional Surgery 2025, 7/2025, Nashville, TN.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <!-- No PDF link provided, so we'll just have an abstract/page placeholder -->
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                        </svg>
-                        [Abstract/Page]
-                    </a>
-                </div>
-            </div>
+            <main class="lg:col-span-8 xl:col-span-9">
+                
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <span class="border-b-4 border-blue-500 pb-1">News</span>
+                    </h2>
+                    <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
+                        <ul class="space-y-4">
+                            <li class="flex gap-4 items-start">
+                                <span class="font-mono text-xs font-bold text-slate-400 mt-1 shrink-0">2025-07</span>
+                                <p class="text-sm">Paper accepted at <span class="font-semibold">SNIS 2025</span> in Nashville.</p>
+                            </li>
+                            <li class="flex gap-4 items-start">
+                                <span class="font-mono text-xs font-bold text-slate-400 mt-1 shrink-0">2025-04</span>
+                                <p class="text-sm">Paper "C-ARM Guidance" accepted at <span class="font-semibold">IEEE ISBI 2025</span>.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            <!-- New Publication 3 -->
-            <div class="publication-item p-5 mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Automated C-Arm Positioning via Conformal Landmark Localization</h3>
-                <p class="text-gray-600 mb-1">
-                    <span class="font-medium">Authors:</span> Your Name et al. (Please update with actual authors)
-                </p>
-                <p class="text-gray-600 mb-3">
-                    <span class="font-medium">Journal/Conference:</span> ICCV workshop paper 2025 <span class="text-red-500 font-semibold">(Not camera ready yet)</span>
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <!-- Placeholder links as paper is not camera ready -->
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
-                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
-                        </svg>
-                        [PDF Placeholder]
-                    </a>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                        </svg>
-                        [Abstract/Page Placeholder]
-                    </a>
-                </div>
-            </div>
+                <section id="publications" class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <span class="border-b-4 border-blue-500 pb-1">Selected Publications</span>
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        
+                        <article class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all duration-300 group">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="hidden md:block w-32 h-24 bg-slate-100 rounded-lg shrink-0 flex items-center justify-center text-slate-300">
+                                    <i class="fa-regular fa-image text-2xl"></i>
+                                </div>
+                                
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
+                                        C-ARM Guidance: A Self-Supervised Approach to Automated Positioning During Stroke Thrombectomy
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-3">
+                                        A. Arrabi*, <span class="highlight-author">J. H. Jung*</span>, et al.
+                                    </p>
+                                    
+                                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                                        <span class="bg-blue-50 text-blue-700 border border-blue-100 text-xs font-semibold px-2.5 py-0.5 rounded">ISBI 2025</span>
+                                        <span class="text-slate-400 text-xs">IEEE 22nd International Symposium on Biomedical Imaging</span>
+                                    </div>
 
-            <!-- Example Publication 1 (Original) -->
-            <div class="publication-item p-5 mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Title of Publication One</h3>
-                <p class="text-gray-600 mb-1">
-                    <span class="font-medium">Authors:</span> Your Name, Co-Author A, Co-Author B
-                </p>
-                <p class="text-gray-600 mb-3">
-                    <span class="font-medium">Journal/Conference:</span> Journal of Important Research, Vol. X, No. Y, pp. Z-Z, Year.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
-                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
-                        </svg>
-                        [PDF]
-                    </a>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                        </svg>
-                        [Abstract/Page]
-                    </a>
-                    <!-- Add more links as needed (e.g., GitHub repo, data, etc.) -->
-                </div>
-            </div>
+                                    <div class="flex gap-3">
+                                        <a href="https://ieeexplore.ieee.org/document/10980945" class="flex items-center gap-1 text-xs font-mono font-medium text-slate-500 hover:text-blue-600 transition-colors">
+                                            <i class="fa-regular fa-file-pdf"></i> PDF
+                                        </a>
+                                        <a href="#" class="flex items-center gap-1 text-xs font-mono font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                                            <i class="fa-solid fa-code"></i> Code
+                                        </a>
+                                        <a href="#" class="flex items-center gap-1 text-xs font-mono font-medium text-slate-500 hover:text-slate-900 transition-colors">
+                                            <i class="fa-solid fa-quote-right"></i> BibTeX
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
 
-            <!-- Example Publication 2 (Original) -->
-            <div class="publication-item p-5 mb-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">Another Important Paper Title</h3>
-                <p class="text-gray-600 mb-1">
-                    <span class="font-medium">Authors:</span> Co-Author C, Your Name, Co-Author D
-                </p>
-                <p class="text-gray-600 mb-3">
-                    <span class="font-medium">Journal/Conference:</span> Proceedings of the International Conference on Advanced Topics, Year.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.414L14.586 5A2 2 0 0115 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h7V6.414L10.586 4H6z" clip-rule="evenodd" />
-                            <path d="M10 8a1 1 0 011 1v3a1 1 0 11-2 0V9a1 1 0 011-1z" />
-                        </svg>
-                        [PDF]
-                    </a>
-                    <a href="#" class="text-blue-500 hover:text-blue-700 font-medium" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-1" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                            <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
-                        </svg>
-                        [Abstract/Page]
-                    </a>
-                </div>
-            </div>
+                        <article class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all duration-300 group">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="hidden md:block w-32 h-24 bg-slate-100 rounded-lg shrink-0 flex items-center justify-center text-slate-300">
+                                    <i class="fa-solid fa-brain text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
+                                        Automated C-Arm Positioning via Conformal Landmark Localization
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-3">
+                                        <span class="highlight-author">J. H. Jung</span>, et al.
+                                    </p>
+                                    
+                                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                                        <span class="bg-indigo-50 text-indigo-700 border border-indigo-100 text-xs font-semibold px-2.5 py-0.5 rounded">ICCV 2025 Workshop</span>
+                                        <span class="text-slate-400 text-xs italic">(Not Camera Ready Yet)</span>
+                                    </div>
 
-            <!-- Add more publication-item divs for each publication -->
+                                    <div class="flex gap-3">
+                                        <span class="text-xs font-mono text-slate-400 cursor-not-allowed">
+                                            <i class="fa-regular fa-clock"></i> Coming Soon
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
 
-        </section>
+                        <article class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition-all duration-300 group">
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="hidden md:block w-32 h-24 bg-slate-100 rounded-lg shrink-0 flex items-center justify-center text-slate-300">
+                                    <i class="fa-solid fa-x-ray text-2xl"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2">
+                                        Deep learning model predicts biplane trajectory from pelvis to head
+                                    </h3>
+                                    <p class="text-slate-600 text-sm mb-3">
+                                        A. Kashkoush, A. Arrabi, <span class="highlight-author">J. H. Jung</span>, N. Franssen, S. Wshah, S. Raymond
+                                    </p>
+                                    
+                                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                                        <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs font-semibold px-2.5 py-0.5 rounded">SNIS 2025</span>
+                                        <span class="text-slate-400 text-xs">Society for NeuroInterventional Surgery</span>
+                                    </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="mb-12 p-6 bg-white rounded-lg shadow-md">
-            <h2 class="text-3xl font-bold section-title mb-6">Contact</h2>
-            <p class="text-lg leading-relaxed text-gray-700 mb-4">
-                I'm always open to discussing research collaborations, academic opportunities, or any questions you might have about my work.
-            </p>
-            <ul class="text-lg text-gray-700 space-y-3">
-                <li>
-                    <strong class="font-semibold">Email:</strong> <a href="mailto:your.email@example.com" class="hover:text-blue-600">your.email@example.com</a>
-                </li>
-                <li>
-                    <strong class="font-semibold">LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">linkedin.com/in/yourprofile</a>
-                </li>
-                <li>
-                    <strong class="font-semibold">GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">github.com/yourusername</a>
-                </li>
-                <!-- Add other relevant links like Google Scholar, ResearchGate, ORCID, personal website, etc. -->
-                <li>
-                    <strong class="font-semibold">Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Google Scholar Profile</a>
-                </li>
-            </ul>
-        </section>
+                                    <div class="flex gap-3">
+                                        <a href="#" class="flex items-center gap-1 text-xs font-mono font-medium text-slate-500 hover:text-blue-600 transition-colors">
+                                            <i class="fa-solid fa-link"></i> Abstract
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
 
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm mt-10 p-4 border-t border-gray-200">
-            &copy; 2025 Your Name. All rights reserved.
-        </footer>
+                    </div>
+                </section>
 
+                <section class="border-t border-slate-200 pt-8 mt-12">
+                    <div class="flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                        <p>&copy; 2025 Jay Hwasung Jung</p>
+                        <div class="mt-2 md:mt-0 font-mono text-xs">
+                            <span class="text-slate-400">Built with Tailwind CSS</span>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
     </div>
+
 </body>
 </html>
