@@ -4,50 +4,50 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Jay Hwasung Jung</title>
-<meta name="description" content="Jay Hwasung Jung — Researcher at the University of Vermont. Conformal prediction, medical imaging, and uncertainty-aware AI." />
+<meta name="description" content="Jay Hwasung Jung — PhD researcher at the University of Vermont. Generative and agentic AI for therapeutic peptide design and medical imaging." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,wght@1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
   /* ===== THEMES ===== */
   [data-theme="dark"] {
-    --bg: #0b0907;
-    --bg-2: #110e0b;
-    --surface: #161310;
-    --surface-2: #1d1915;
-    --line: #2a2520;
-    --line-2: #3a342d;
-    --text: #f3ece0;
-    --text-soft: #c9bfae;
-    --text-muted: #8a8174;
-    --accent: #e7a559;
-    --accent-glow: rgba(231, 165, 89, 0.18);
+    --bg: #0c0e11;
+    --bg-2: #101418;
+    --surface: #15181c;
+    --surface-2: #1b1f24;
+    --line: #262b30;
+    --line-2: #353c43;
+    --text: #eef1f4;
+    --text-soft: #b6c0c7;
+    --text-muted: #8a949b;
+    --accent: #5cc8c1;
+    --accent-glow: rgba(92, 200, 193, 0.16);
     --grain-opacity: 0.05;
-    --gradient-1: rgba(231, 165, 89, 0.07);
-    --gradient-2: rgba(127, 182, 192, 0.04);
-    --gradient-3: rgba(231, 165, 89, 0.05);
+    --gradient-1: rgba(92, 200, 193, 0.07);
+    --gradient-2: rgba(120, 150, 170, 0.04);
+    --gradient-3: rgba(92, 200, 193, 0.05);
     --shadow: rgba(0, 0, 0, 0.6);
   }
 
   [data-theme="light"] {
-    --bg: #faf6ee;
-    --bg-2: #f3ede0;
-    --surface: #f7f1e3;
-    --surface-2: #ede5d3;
-    --line: #e2d8c2;
-    --line-2: #c9bda1;
-    --text: #1a1612;
-    --text-soft: #4a4338;
-    --text-muted: #7a705f;
-    --accent: #b87333;
-    --accent-glow: rgba(184, 115, 51, 0.12);
+    --bg: #f3f6f6;
+    --bg-2: #e9eef0;
+    --surface: #f9fbfb;
+    --surface-2: #e6edee;
+    --line: #d9e1e2;
+    --line-2: #bcc8ca;
+    --text: #14191c;
+    --text-soft: #3c454a;
+    --text-muted: #5d686d;
+    --accent: #137f78;
+    --accent-glow: rgba(19, 127, 120, 0.12);
     --grain-opacity: 0.025;
-    --gradient-1: rgba(184, 115, 51, 0.06);
-    --gradient-2: rgba(70, 130, 140, 0.03);
-    --gradient-3: rgba(184, 115, 51, 0.04);
-    --shadow: rgba(60, 40, 20, 0.08);
+    --gradient-1: rgba(19, 127, 120, 0.06);
+    --gradient-2: rgba(70, 110, 120, 0.03);
+    --gradient-3: rgba(19, 127, 120, 0.04);
+    --shadow: rgba(20, 40, 45, 0.08);
   }
 
   :root {
@@ -60,13 +60,16 @@
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--bg);
     color: var(--text);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.65;
     letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
@@ -200,11 +203,11 @@
   }
 
   h1 {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 600;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
     font-size: clamp(46px, 6.5vw, 76px);
-    line-height: 1.02;
-    letter-spacing: -0.035em;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
     margin-bottom: 28px;
   }
   h1 .accent { color: var(--accent); }
@@ -283,9 +286,9 @@
   .avatar-placeholder {
     width: 100%; height: 100%;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 300;
-    font-size: 88px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-size: 92px;
     color: var(--accent);
     background: linear-gradient(160deg, var(--surface-2), var(--surface));
   }
@@ -302,10 +305,10 @@
     border-bottom: 1px solid var(--line);
   }
   .section-head h2 {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
     font-size: 28px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.012em;
     color: var(--text);
   }
   .section-head .count {
@@ -322,7 +325,7 @@
     gap: 20px;
   }
   .research-card {
-    padding: 26px 24px;
+    padding: 28px 26px;
     background: linear-gradient(160deg, var(--surface-2), var(--surface));
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -354,17 +357,17 @@
     margin-bottom: 14px;
   }
   .research-card h3 {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: -0.015em;
+    font-size: 19px;
+    letter-spacing: -0.01em;
     margin-bottom: 10px;
     color: var(--text);
   }
   .research-card p {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.6;
+    font-size: 15px;
+    color: var(--text-soft);
+    line-height: 1.66;
   }
 
   /* ===== PUBLICATIONS ===== */
@@ -429,11 +432,11 @@
   .pub-meta .dot { color: var(--line-2); }
 
   .pub h3 {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-weight: 500;
-    font-size: 19px;
-    line-height: 1.35;
-    letter-spacing: -0.018em;
+    font-size: 20px;
+    line-height: 1.32;
+    letter-spacing: -0.012em;
     margin-bottom: 8px;
     color: var(--text);
   }
@@ -448,13 +451,18 @@
     font-weight: 600;
     border-bottom: 1px solid var(--accent);
   }
+  .pub-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
   .pub-venue {
-    font-family: 'Newsreader', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-style: italic;
     font-weight: 400;
     font-size: 15px;
     color: var(--text-muted);
-    line-height: 1.5;
+    line-height: 1.55;
   }
   .pub-actions {
     margin-top: 14px;
@@ -501,7 +509,7 @@
   }
   .news-body strong { color: var(--text); font-weight: 500; }
   .news-body em {
-    font-family: 'Newsreader', serif;
+    font-family: 'Fraunces', Georgia, serif;
     font-style: italic;
     color: var(--text);
     font-size: 16px;
@@ -585,6 +593,23 @@
     }
     .news-item { grid-template-columns: 1fr; gap: 4px; }
   }
+  /* ===== ACCESSIBILITY ===== */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
 </style>
 </head>
 <body>
@@ -617,14 +642,14 @@
         <div class="eyebrow">researcher · uvm<span class="cursor"></span></div>
         <h1>Jay Hwasung<br><span class="accent">Jung.</span></h1>
         <p class="hero-bio">
-          I'm a researcher at the <strong>University of Vermont</strong>, working with <a href="https://www.uvm.edu/cems/cs/profiles/safwan_wshah" target="_blank" rel="noopener">Prof. Safwan Wshah</a> in the Vermont AI Lab.
-          My work centers on <strong>uncertainty-aware deep learning</strong> for medical imaging — particularly conformal prediction for autonomous C-arm guidance during fluoroscopy-guided interventions.
+          I'm a PhD researcher at the <strong>University of Vermont</strong>, working with <a href="https://www.uvm.edu/cems/cs/profiles/safwan_wshah" target="_blank" rel="noopener">Prof. Safwan Wshah</a> in the Vermont AI Lab.
+          My work spans <strong>generative models for therapeutic peptide and protein design</strong> and <strong>deep learning for medical imaging</strong> — tied together by an interest in <strong>agentic AI</strong> that carries discovery from benchmark to bench to bedside.
         </p>
         <div class="hero-links">
           <a class="pill" href="https://scholar.google.com/citations?user=yUQojDwAAAAJ&hl=en" target="_blank" rel="noopener">→ scholar</a>
           <a class="pill" href="https://github.com/marszzibros" target="_blank" rel="noopener">→ github</a>
           <a class="pill" href="https://www.linkedin.com/in/jay-hwasung-jung-aa4222209/" target="_blank" rel="noopener">→ linkedin</a>
-          <a class="pill" href="mailto:jay.jung@uvm.edu">→ email</a>
+          <a class="pill" href="mailto:Jay-Hwasung.Jung@uvm.edu">→ email</a>
         </div>
       </div>
       <div class="avatar">
@@ -642,18 +667,18 @@
       <div class="research-grid">
         <div class="research-card reveal">
           <div class="num">01</div>
-          <h3>Conformal Prediction</h3>
-          <p>Distribution-free uncertainty quantification for medical and spatial AI — building prediction regions with formal coverage guarantees.</p>
+          <h3>Generative Biomolecular Design</h3>
+          <p>Generative models for therapeutic peptide and protein design — expanding the chemical vocabulary to non-canonical residues, with candidates validated in the wet lab.</p>
         </div>
         <div class="research-card reveal">
           <div class="num">02</div>
-          <h3>Medical Imaging</h3>
-          <p>Autonomous C-arm positioning, skeletal landmark localization, and agentic control for fluoroscopy-guided interventions.</p>
+          <h3>Agentic AI</h3>
+          <p>Multi-agent systems that plan and execute end-to-end scientific and clinical workflows across generation, screening, and verification.</p>
         </div>
         <div class="research-card reveal">
           <div class="num">03</div>
-          <h3>Foundation Models</h3>
-          <p>Multimodal LLMs for surgical guidance, self-supervised representation learning from X-ray imagery.</p>
+          <h3>Medical Imaging</h3>
+          <p>Autonomous C-arm positioning, skeletal landmark localization, and uncertainty-aware (conformal) prediction for fluoroscopy-guided neurointervention.</p>
         </div>
       </div>
     </section>
@@ -662,23 +687,44 @@
     <section id="publications">
       <div class="section-head">
         <h2>Selected Publications</h2>
-        <span class="count">04 / peer-reviewed</span>
+        <span class="count">05 / selected</span>
       </div>
 
       <article class="pub reveal">
         <div class="pub-fig">
-          <!-- <img src="figs/skeletal.png" alt="Skeletal landmark localization figure"> -->
+          <!-- <img src="figs/ampgan.png" alt="AMPGAN v3 architecture"> -->
           <div class="pub-fig-placeholder">FIG · 01</div>
         </div>
         <div class="pub-body">
           <div class="pub-meta">
-            <span>JOURNAL</span><span class="dot">·</span><span class="year">2026</span>
+            <span>ICML GENBIO WORKSHOP</span><span class="dot">·</span><span class="year">2026</span><span class="dot">·</span><span class="year">under review</span>
           </div>
-          <h3>Autonomous skeletal landmark localization toward agentic C-arm control</h3>
+          <h3>Agentic Discovery of Non-Canonical Antimicrobial Peptides with AMPGAN v3</h3>
+          <p class="pub-authors">
+            <span class="me">J. H. Jung</span>, X. Zhang, S. Song, et al.
+          </p>
+          <p class="pub-venue">ICML 2026 Workshop on Generative and Agentic AI for Biology (GenBio)</p>
+          <div class="pub-actions">
+            <a href="https://openreview.net/forum?id=kQu5dbf9NN" target="_blank" rel="noopener">[ openreview ]</a>
+            <a href="https://github.com/marszzibros/AMPGANv3" target="_blank" rel="noopener">[ code ]</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pub reveal">
+        <div class="pub-fig">
+          <!-- <img src="figs/skeletal.png" alt="Skeletal landmark localization figure"> -->
+          <div class="pub-fig-placeholder">FIG · 02</div>
+        </div>
+        <div class="pub-body">
+          <div class="pub-meta">
+            <span>IPCAI · JOURNAL</span><span class="dot">·</span><span class="year">2026</span>
+          </div>
+          <h3>Autonomous Skeletal Landmark Localization toward Agentic C-arm Control</h3>
           <p class="pub-authors">
             <span class="me">J. H. Jung</span>, A. Arrabi, J. Luo, S. Raymond, S. Wshah
           </p>
-          <p class="pub-venue">International Journal of Computer Assisted Radiology and Surgery</p>
+          <p class="pub-venue">Information Processing in Computer-Assisted Interventions (IPCAI); International Journal of Computer Assisted Radiology and Surgery</p>
           <div class="pub-actions">
             <a href="https://link.springer.com/article/10.1007/s11548-026-03632-0" target="_blank" rel="noopener">[ paper ]</a>
             <a href="https://github.com/marszzibros/C-arm-localization-LLMs" target="_blank" rel="noopener">[ code ]</a>
@@ -689,20 +735,20 @@
       <article class="pub reveal">
         <div class="pub-fig">
           <!-- <img src="figs/conformal.png" alt="Conformal landmark localization"> -->
-          <div class="pub-fig-placeholder">FIG · 02</div>
+          <div class="pub-fig-placeholder">FIG · 03</div>
         </div>
         <div class="pub-body">
           <div class="pub-meta">
-            <span>ICCV WORKSHOPS</span><span class="dot">·</span><span class="year">2025</span>
+            <span>ICCV WORKSHOP · APAH</span><span class="dot">·</span><span class="year">2025</span>
           </div>
           <h3>Automated C-Arm Positioning via Conformal Landmark Localization</h3>
           <p class="pub-authors">
             A. Arrabi, <span class="me">J. H. Jung</span>, J. Luo, N. Franssen, S. B. Raymond, S. Wshah
           </p>
-          <p class="pub-venue">Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops</p>
+          <p class="pub-venue">ICCV 2025 Workshop on Advanced Perception for Autonomous Healthcare (APAH)</p>
           <div class="pub-actions">
-            <a href="https://arxiv.org/abs/2510.16160" target="_blank" rel="noopener">[ arxiv ]</a>
-            <a href="https://openaccess.thecvf.com/content/ICCV2025W/APAH/html/Arrabi_Automated_C-Arm_Positioning_via_Conformal_Landmark_Localization_ICCVW_2025_paper.html" target="_blank" rel="noopener">[ cvf ]</a>
+            <a href="https://openaccess.thecvf.com/content/ICCV2025W/APAH/html/Arrabi_Automated_C-Arm_Positioning_via_Conformal_Landmark_Localization_ICCVW_2025_paper.html" target="_blank" rel="noopener">[ paper ]</a>
+            <a href="https://github.com/AhmadArrabi/C_arm_guidance_APAH" target="_blank" rel="noopener">[ code ]</a>
           </div>
         </div>
       </article>
@@ -710,19 +756,19 @@
       <article class="pub reveal">
         <div class="pub-fig">
           <!-- <img src="figs/biplane.png" alt="Biplane trajectory"> -->
-          <div class="pub-fig-placeholder">FIG · 03</div>
+          <div class="pub-fig-placeholder">FIG · 04</div>
         </div>
         <div class="pub-body">
           <div class="pub-meta">
             <span>JNIS · ABSTRACT</span><span class="dot">·</span><span class="year">2025</span>
           </div>
-          <h3>E-151 Deep learning model predicts biplane trajectory from pelvis to the head</h3>
+          <h3>Deep Learning Model Predicts Biplane Trajectory from Pelvis to the Head</h3>
           <p class="pub-authors">
             A. Kashkoush, A. Arrabi, <span class="me">J. Jung</span>, N. Franssen, S. Wshah, S. Raymond
           </p>
           <p class="pub-venue">Journal of NeuroInterventional Surgery, 17 (Suppl 1), A193–A194</p>
           <div class="pub-actions">
-            <a href="#" target="_blank" rel="noopener">[ abstract ]</a>
+            <a href="https://jnis.bmj.com/content/17/Suppl_1/A193.2.abstract" target="_blank" rel="noopener">[ abstract ]</a>
           </div>
         </div>
       </article>
@@ -730,19 +776,21 @@
       <article class="pub reveal">
         <div class="pub-fig">
           <!-- <img src="figs/isbi.png" alt="C-arm self-supervised"> -->
-          <div class="pub-fig-placeholder">FIG · 04</div>
+          <div class="pub-fig-placeholder">FIG · 05</div>
         </div>
         <div class="pub-body">
           <div class="pub-meta">
             <span>IEEE ISBI</span><span class="dot">·</span><span class="year">2025</span>
           </div>
-          <h3>C-arm guidance: A self-supervised approach to automated positioning during stroke thrombectomy</h3>
+          <h3>C-Arm Guidance: A Self-Supervised Approach to Automated Positioning During Stroke Thrombectomy</h3>
           <p class="pub-authors">
-            A. Arrabi, <span class="me">J. Jung</span>, J. Le, A. Nguyen, J. Reed, E. Stahl, N. Franssen, S. Raymond, S. Wshah
+            A. Arrabi<sup>*</sup>, <span class="me">J. Jung</span><sup>*</sup>, J. Le, A. Nguyen, J. Reed, E. Stahl, N. Franssen, S. Raymond, S. Wshah
           </p>
+          <p class="pub-note"><sup>*</sup> equal contribution</p>
           <p class="pub-venue">IEEE 22nd International Symposium on Biomedical Imaging (ISBI)</p>
           <div class="pub-actions">
-            <a href="#" target="_blank" rel="noopener">[ ieee ]</a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/10980945" target="_blank" rel="noopener">[ paper ]</a>
+            <a href="https://github.com/AhmadArrabi/C_arm_guidance.git" target="_blank" rel="noopener">[ code ]</a>
           </div>
         </div>
       </article>
@@ -756,15 +804,21 @@
       </div>
 
       <div class="news-item reveal">
+        <div class="news-date">2026 · 05</div>
+        <div class="news-body">
+          Submitted <em>Agentic Discovery of Non-Canonical Antimicrobial Peptides with AMPGAN v3</em> to the <strong>ICML 2026 Workshop on Generative and Agentic AI for Biology</strong>.
+        </div>
+      </div>
+      <div class="news-item reveal">
         <div class="news-date">2026 · 04</div>
         <div class="news-body">
-          Our paper <em>Autonomous skeletal landmark localization toward agentic C-arm control</em> is accepted at the <strong>International Journal of Computer Assisted Radiology and Surgery</strong>.
+          Our paper <em>Autonomous Skeletal Landmark Localization toward Agentic C-arm Control</em> is accepted at <strong>IPCAI 2026</strong> (International Journal of Computer Assisted Radiology and Surgery).
         </div>
       </div>
       <div class="news-item reveal">
         <div class="news-date">2025 · 10</div>
         <div class="news-body">
-          <em>Automated C-Arm Positioning via Conformal Landmark Localization</em> presented at <strong>ICCV 2025</strong> Workshops.
+          <em>Automated C-Arm Positioning via Conformal Landmark Localization</em> was presented at the <strong>ICCV 2025</strong> APAH Workshop.
         </div>
       </div>
       <div class="news-item reveal">
@@ -778,7 +832,7 @@
     <!-- FOOTER -->
     <footer>
       <p>© 2026 · Jay Hwasung Jung</p>
-      <p>Burlington, VT · <a href="mailto:jay.jung@uvm.edu">jay.jung@uvm.edu</a></p>
+      <p>Burlington, VT · <a href="mailto:Jay-Hwasung.Jung@uvm.edu">Jay-Hwasung.Jung@uvm.edu</a></p>
     </footer>
 
   </div>
